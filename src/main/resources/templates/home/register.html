@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>用户注册</title>
+</head>
+<body>
+    <div>
+        <form  id="registerForm">
+            用户名 ：
+            <input type="text" id="username" placeholder="用户名" name="username"/>
+            <br>
+            密  码：
+            <input type="password" id ="password"  placeholder="密码" name="password" />
+            <br>
+            确认密码：
+            <input type="password" id ="repeatPassword" placeholder="确认密码" name="repeatPassword" />
+            <br>
+            <button type="button" onclick="checkForm()">
+                注&nbsp;册
+            </button>
+        </form>
+    </div>
+    <br>
+   <!-- <div>
+        <p th:text="${name}" >name</p>
+        &lt;!&ndash;<p th:text="'Hello！ ' + ${name} + '!'" >hello world</p>&ndash;&gt;
+        &lt;!&ndash;<p th:text="|Hello！ ${name}!|" >hello world</p>&ndash;&gt;
+    </div>-->
+</body>
+</html>
